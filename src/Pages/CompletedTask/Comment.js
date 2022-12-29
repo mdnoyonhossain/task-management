@@ -12,7 +12,7 @@ const Comment = () => {
         const comment = from.comment.value;
         const comments = {comment}
         
-        fetch(`http://localhost:5000/taskManagement/comment/${commentStrod._id}`, {
+        fetch(`https://task-management-server-chi.vercel.app/taskManagement/comment/${commentStrod._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

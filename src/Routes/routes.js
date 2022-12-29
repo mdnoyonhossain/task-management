@@ -41,17 +41,17 @@ const router = createBrowserRouter([
             },
             {
                 path: '/update/:id',
-                loader: ({params}) => fetch(`http://localhost:5000/taskManagement/${params.id}`),
+                loader: ({params}) => fetch(`https://task-management-server-chi.vercel.app/taskManagement/${params.id}`),
                 element: <Update></Update>
             },
             {
                 path: '/details/:id',
-                loader: ({params}) => fetch(`http://localhost:5000/taskManagement/${params.id}`),
+                loader: ({params}) => fetch(`https://task-management-server-chi.vercel.app/taskManagement/${params.id}`),
                 element: <PrivateRoutes><Details></Details></PrivateRoutes>
             },
             {
                 path: '/comment/:id',
-                loader: ({params}) => fetch(`http://localhost:5000/taskManagement/${params.id}`),
+                loader: ({params}) => fetch(`https://task-management-server-chi.vercel.app/taskManagement/${params.id}`),
                 element: <Comment></Comment>
             },
         ]

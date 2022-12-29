@@ -47,15 +47,15 @@ const Register = () => {
                 <h1 className="text-2xl font-bold text-center">Sign Up</h1>
                 <form onSubmit={handleSubmit} className="space-y-6 ng-untouched ng-pristine ng-valid">
                     <div className="space-y-1 text-sm">
-                        <label for="username" className="block text-gray-400">Name</label>
+                        <label htmlFor="username" className="block text-gray-400">Name</label>
                         <input type="text" name="name" id="username" placeholder="Username" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" />
                     </div>
                     <div className="space-y-1 text-sm">
-                        <label for="email" className="block text-gray-400">Email</label>
+                        <label htmlFor="email" className="block text-gray-400">Email</label>
                         <input type="email" name="email" id="email" placeholder="Email Address" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" />
                     </div>
                     <div className="space-y-1 text-sm">
-                        <label for="password" className="block text-gray-400">Password</label>
+                        <label htmlFor="password" className="block text-gray-400">Password</label>
                         <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" />
                         <div className="flex justify-end text-xs text-gray-400">
                         </div>
@@ -75,8 +75,8 @@ const Register = () => {
                     </button>
 
                 </div>
-                <p className="text-xs text-center sm:px-6 text-red-400">Don't have an account?
-                    <Link to='/login' className="text-blue-500 font-bold"> Sign up</Link>
+                <p className="text-xs text-center sm:px-6 text-red-400">Already have an account?
+                    <Link to='/login' className="text-blue-500 font-bold"> Login</Link>
                 </p>
             </div>
         </div>

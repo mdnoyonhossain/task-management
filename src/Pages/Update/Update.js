@@ -12,7 +12,7 @@ const Update = () => {
     const handleSubmit = event => {
         event.preventDefault();
         // console.log(users);
-        fetch(`http://localhost:5000/taskManagement/${taskStrodData._id}`, {
+        fetch(`https://task-management-server-chi.vercel.app/taskManagement/${taskStrodData._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

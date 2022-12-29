@@ -8,10 +8,8 @@ const AddTask = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        console.log(users);
-        
 
-        fetch('http://localhost:5000/taskManagement', {
+        fetch('https://task-management-server-chi.vercel.app/taskManagement', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -66,11 +64,6 @@ const AddTask = () => {
 
                             <div className="col-span-full">
                                 <textarea onBlur={handleInputBlur} name="taskDescription" placeholder='Task Description' id="" cols="30" rows="4" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900 px-3" required></textarea>
-                            </div>
-                            <div className="col-span-full">
-                                <div className="flex">
-                                    <input onBlur={handleInputBlur} type="file" name="image" id="files" className="px-8 py-12 border-2 border-dashed rounded-md border-gray-700 text-gray-400 bg-gray-200" />
-                                </div>
                             </div>
                             <button className="bg-transparent bg-[#ff3811] text-white font-semibold  py-2 px-4 border hover:border-transparent rounded">
                                 Submit

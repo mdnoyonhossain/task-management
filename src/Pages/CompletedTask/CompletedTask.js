@@ -8,14 +8,14 @@ const CompletedTask = () => {
     const { data: taskManagement = [], refetch, isLoading } = useQuery({
         queryKey: ['taskManagement'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/taskManagementComplated');
+            const res = await fetch('https://task-management-server-chi.vercel.app/taskManagementComplated');
             const data = await res.json();
             return data;
         }
     });
 
     const handleTaskDelete = task => {
-        fetch(`http://localhost:5000/taskManagement/${task._id}`, {
+        fetch(`https://task-management-server-chi.vercel.app/taskManagement/${task._id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
@@ -28,7 +28,7 @@ const CompletedTask = () => {
     }
 
     const handleTaskNotComplated = id => {
-        fetch(`http://localhost:5000/taskManagement/notComplated/${id}`, {
+        fetch(`https://task-management-server-chi.vercel.app/taskManagement/notComplated/${id}`, {
             method: 'PUT'
         })
             .then(res => res.json())

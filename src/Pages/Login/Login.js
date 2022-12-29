@@ -47,11 +47,11 @@ const Login = () => {
                 <h1 className="text-2xl font-bold text-center">Login</h1>
                 <form onSubmit={handleSubmit} className="space-y-6 ng-untouched ng-pristine ng-valid">
                     <div className="space-y-1 text-sm">
-                        <label for="email" className="block text-gray-400">Email</label>
+                        <label htmlFor="email" className="block text-gray-400">Email</label>
                         <input type="email" name="name" id="email" placeholder="Email" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" />
                     </div>
                     <div className="space-y-1 text-sm">
-                        <label for="password" className="block text-gray-400">Password</label>
+                        <label htmlFor="password" className="block text-gray-400">Password</label>
                         <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" />
                         <div className="flex justify-end text-xs text-gray-400">
                         </div>
@@ -71,7 +71,7 @@ const Login = () => {
                     </button>
                     
                 </div>
-                <p className="text-xs text-center sm:px-6 text-red-400">Don't have an account?
+                <p className="text-xs text-center sm:px-6 text-red-400">Create account?
                     <Link to='/signup' className="text-blue-500 font-bold"> Sign up</Link>
                 </p>
             </div>
